@@ -1,45 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lixo Têxtil e Meio Ambiente</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/acessibilidade.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site sobre as consequências ambientais da produção excessiva de lixo têxtil e poluição da água, com foco nas áreas urbanas.">
+    <title>Poluição da Água pela Produção de Lixo Têxtil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Lixo Têxtil e as Consequências Ambientais</h1>
-    <nav id="menu-acessibilidade">
-      <button onclick="aumentarFonte()">A+</button>
-      <button onclick="diminuirFonte()">A-</button>
-      <button onclick="altoContraste()">Alto Contraste</button>
-    </nav>
-  </header>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#poluicao-agua">Poluição da Água</a></li>
+                    <li><a href="#relacao-cidade">Relação com a Cidade</a></li>
+                    <li><a href="#acessibilidade" id="accessibility-btn">Acessibilidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <main>
-    <section>
-      <h2>Impacto no Meio Ambiente</h2>
-      <p>A indústria da moda é uma das maiores responsáveis pela geração de lixo no mundo. O descarte inadequado de resíduos têxteis polui solos, rios e oceanos, afetando tanto áreas urbanas quanto rurais.</p>
+    <section id="inicio">
+        <div class="container">
+            <h1>Consequências Ambientais da Produção Excessiva de Lixo Têxtil</h1>
+            <p>Este site explora como a indústria têxtil e a produção excessiva de roupas contribuem para a poluição da água e seu impacto ambiental, especialmente nas áreas urbanas.</p>
+        </div>
     </section>
 
-    <section>
-      <h2>Relação entre Campo e Cidade</h2>
-      <p>Enquanto nas cidades o consumo acelerado gera grandes quantidades de roupas descartadas, no campo os resíduos têxteis podem contaminar áreas agrícolas, prejudicando plantações, mananciais e a fauna local. Essa relação desequilibra ecossistemas e afeta a saúde ambiental de forma ampla.</p>
+    <section id="poluicao-agua">
+        <div class="container">
+            <h2>Poluição da Água pela Indústria Têxtil</h2>
+            <p>A produção de roupas resulta em grandes volumes de resíduos têxteis, que muitas vezes são descartados de maneira inadequada, poluindo os corpos d'água. O processo de tingimento de tecidos, por exemplo, utiliza substâncias químicas tóxicas que são lançadas nos rios, afetando a qualidade da água e a vida aquática.</p>
+            <ul>
+                <li>Produtos químicos como corantes e solventes são liberados na água.</li>
+                <li>A água utilizada na produção é muitas vezes descartada sem tratamento adequado.</li>
+                <li>Contaminação de fontes de água potável, afetando tanto a fauna quanto a flora aquática.</li>
+            </ul>
+        </div>
     </section>
 
-    <section>
-      <h2>Soluções Sustentáveis</h2>
-      <ul>
-        <li>Reciclagem e reaproveitamento de tecidos.</li>
-        <li>Moda consciente e consumo responsável.</li>
-        <li>Projetos de logística reversa e coleta seletiva.</li>
-      </ul>
+    <section id="relacao-cidade">
+        <div class="container">
+            <h2>Relação com a Cidade</h2>
+            <p>As áreas urbanas enfrentam uma sobrecarga de resíduos têxteis, que muitas vezes acabam nos sistemas de drenagem, levando a substâncias tóxicas para os rios e oceanos. O consumo acelerado de roupas nas cidades também gera um aumento na demanda de produtos, levando a mais resíduos e poluição.</p>
+            <p>A falta de infraestrutura para gerenciar resíduos têxteis nas cidades contribui significativamente para a poluição dos corpos d'água. Muitas vezes, os produtos químicos da indústria têxtil acabam em águas superficiais, afetando a qualidade da água nas zonas urbanas e rurais.</p>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 - Projeto Sustentável</p>
-  </footer>
+    <section id="acessibilidade">
+        <div class="container">
+            <h2>Acessibilidade</h2>
+            <button onclick="toggleContrast()">Alternar para Modo de Alto Contraste</button>
+            <button onclick="increaseTextSize()">Aumentar Tamanho do Texto</button>
+            <button onclick="decreaseTextSize()">Diminuir Tamanho do Texto</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Poluição da Água pela Produção de Lixo Têxtil</p>
+        </div>
+    </footer>
 </body>
 </html>
