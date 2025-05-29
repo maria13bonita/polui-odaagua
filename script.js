@@ -1,11 +1,18 @@
-function aumentarFonte() {
-  document.body.style.fontSize = "1.2em";
+// Função para alternar o modo de alto contraste
+function toggleContrast() {
+    document.body.classList.toggle('high-contrast');
 }
 
-function diminuirFonte() {
-  document.body.style.fontSize = "0.9em";
+// Função para aumentar o tamanho do texto
+function increaseTextSize() {
+    const currentSize = window.getComputedStyle(document.body).fontSize;
+    const newSize = parseFloat(currentSize) * 1.2 + 'px';
+    document.body.style.fontSize = newSize;
 }
 
-function altoContraste() {
-  document.body.classList.toggle("alto-contraste");
+// Função para diminuir o tamanho do texto
+function decreaseTextSize() {
+    const currentSize = window.getComputedStyle(document.body).fontSize;
+    const newSize = parseFloat(currentSize) * 0.8 + 'px';
+    document.body.style.fontSize = newSize;
 }
